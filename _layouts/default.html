@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <title>Jireh Nimes</title>
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
 </head>
 <body>
-    Body
+    {{ content }}
 
-    {% include footer.html %}
+    <script type="text/javascript" src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>

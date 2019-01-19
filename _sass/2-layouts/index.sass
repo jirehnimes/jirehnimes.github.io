@@ -1,0 +1,47 @@
+section#index
+    height: 100vh
+    width: 100vw
+    background-image: url('/assets/imgs/index/bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    /* Child Elements */
+    section#title
+        position: fixed
+        left: 120px
+        bottom: 30px
+        height: 150px
+        width: 400px
+        background-color: gray
+
+        /* Child Elements */
+        @keyframes name 
+            from
+                left: 200px
+            to
+                left: 70px
+
+        h1#name
+            position: fixed
+            left: 70px
+            bottom: 100px
+            color: white
+            font-size: 50px
+            animation-name: name
+            animation-duration: 5s
+
+        @keyframes subname 
+            from
+                left: 70px
+            to
+                left: 180px
+
+        h1#subname
+            position: fixed
+            left: 180px
+            bottom: 50px
+            color: white
+            font-size: 40px
+            animation-name: subname
+            animation-duration: 5s
