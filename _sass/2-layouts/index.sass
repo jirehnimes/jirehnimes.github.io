@@ -1,47 +1,37 @@
 section#index
     height: 100vh
     width: 100vw
-    background-image: url('/assets/imgs/index/bg.jpg')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
 
-    /* Child Elements */
-    section#title
+    h1
         position: fixed
-        left: 120px
-        bottom: 30px
-        height: 150px
-        width: 400px
-        background-color: gray
+        top: 100px
+        left: 100px
+        font-family: 'Kanit Extra Bold'
+        font-size: 10vw
+        color: white
+        opacity: 0.7
 
-        /* Child Elements */
-        @keyframes name 
-            from
-                left: 200px
-            to
-                left: 70px
+    div.row
+        height: 100%
+        index: 0
 
-        h1#name
-            position: fixed
-            left: 70px
-            bottom: 100px
-            color: white
-            font-size: 50px
-            animation-name: name
-            animation-duration: 5s
+    div[class*='col-']
+        height: 100%
 
-        @keyframes subname 
-            from
-                left: 70px
-            to
-                left: 180px
+    div#image
+        background-image: url('/assets/imgs/index/bg.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        background-size: 100% auto
+        -moz-box-shadow:    inset 100px 5px 6px #ccc
+        -webkit-box-shadow: inset 3px 5px 6px #ccc
+        box-shadow:         inset 3px 5px 6px #ccc
 
-        h1#subname
-            position: fixed
-            left: 180px
-            bottom: 50px
-            color: white
-            font-size: 40px
-            animation-name: subname
-            animation-duration: 5s
+
+    div#nav
+        background-color: black
+        padding: none
+
+        canvas
+            opacity: 0.3
