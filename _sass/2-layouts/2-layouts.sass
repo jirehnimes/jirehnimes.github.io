@@ -2,8 +2,15 @@
 @import "about"
 
 // Desktop
-@media only screen and (min-device-width: 768px)
-    @import "desktop/index"
+@media only screen and (min-width: 768px)
+    // @import "desktop/index"
+    section#index
+        background-image: url('/assets/imgs/index/bg-desktop.jpg')
+        background-size: auto 100vh
+
+@media only screen and (min-width: 1440px)
+    section#index
+        background-size: 100vw auto
 
 // Mobile
 @media only screen and (max-device-width: 767px)

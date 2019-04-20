@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <title>Jireh Nimes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
+    <!-- jQuery 3 -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.4.0.min.js"></script>
 </head>
 <body>
+
+    {% include navigation.html %}
+
     {{ content }}
+
+    {% include modules/transition.html %}
 
     <script type="text/javascript" src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </body>
